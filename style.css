@@ -7,16 +7,25 @@
 
 header {
   width: 100%;
-  height: 500px;
+  height: 395px;
   background-color: #129799;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .navigation-1 {
+  padding: 20px;
+  background-color: #129799;
+  position: fixed;
+  top: 0px;
   width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  color: black;
 }
 
 .navigation-1 ul {
@@ -59,6 +68,40 @@ h1 {
   width: 700px;
 }
 
+main {
+  background-color: #ffa185;
+}
+
+.container {
+  padding: 30px;
+}
+
+.container h2 {
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.container p {
+  margin-top: 30px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 720px;
+}
+
+.container-figure {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img-art {
+  width: 630px;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Aqui começa o @media */
 @media (max-width: 1200px) {
   h1 {
     font-size: 2.5rem;
@@ -69,8 +112,45 @@ h1 {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 815px) {
+  .caixa {
+    padding-top: 100px;
+    flex-direction: column;
+    height: 400px;
+  }
+
+  .navigation-2 ul {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .navigation-2 ul li a {
+    font-size: 1.1rem;
+  }
+
+  .navigation-1 ul {
+    width: 100%;
+  }
+
   .img-life {
-    display: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 395px) {
+  h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .navigation-2 ul {
+    padding: 20px;
   }
 }
