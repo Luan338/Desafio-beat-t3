@@ -5,6 +5,11 @@
   color: white;
 }
 
+body {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
 header {
   width: 100%;
   height: 395px;
@@ -16,6 +21,8 @@ header {
 }
 
 .navigation-1 {
+  z-index: 9999999;
+  max-width: 1900px;
   padding: 20px;
   background-color: #129799;
   position: fixed;
@@ -73,6 +80,7 @@ main {
 }
 
 .container {
+  width: 100%;
   padding: 30px;
 }
 
@@ -91,6 +99,14 @@ main {
 }
 
 .container-figure {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-figure-2 {
+  margin-top: 30px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -102,6 +118,13 @@ main {
 }
 
 /* Aqui começa o @media */
+
+@media (max-width: 1285px) {
+  .img-art {
+    width: 500px;
+  }
+}
+
 @media (max-width: 1200px) {
   h1 {
     font-size: 2.5rem;
@@ -109,6 +132,41 @@ main {
 
   .img-life {
     width: 400px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .img-art {
+    width: 400px;
+  }
+}
+
+@media (max-width: 860px) {
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-figure {
+    flex-direction: column;
+    align-items: center;
+    height: 850px;
+  }
+
+  .container-figure-2 {
+    margin-top: 0px;
+    flex-direction: column;
+    align-items: center;
+    height: 850px;
+  }
+
+  .fig {
+    text-align: center;
+    width: 100%;
+  }
+
+  .img-art {
+    width: 90%;
   }
 }
 
@@ -122,6 +180,12 @@ main {
   .navigation-2 ul {
     width: 100%;
     padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .container p {
+    width: 100%;
   }
 }
 
